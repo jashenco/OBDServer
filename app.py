@@ -26,7 +26,7 @@ class CarStatistic(db.Model, JsonModel):
 
 @app.route("/")
 def home():
-    return "OBD App"
+    return "OBD App. Test 1."
 
 @app.route("/stats", methods=['GET', 'POST'])
 def addstat():
