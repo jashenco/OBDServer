@@ -48,4 +48,4 @@ def addstat():
         return json.dumps([s.as_dict() for s in CarStatistic.query.all()], default=str)
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+    app.run(debug=False, host='0.0.0.0')
