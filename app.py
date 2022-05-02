@@ -47,5 +47,5 @@ def addstat():
     elif request.method == 'GET':
         return json.dumps([s.as_dict() for s in CarStatistic.query.all()], default=str)
 
-if __name__ == "__main__":
-    app.run(debug=False, host='0.0.0.0')
+if __name__ == "__main__": 
+    app.run(debug=True, host='0.0.0.0')
